@@ -12,3 +12,44 @@ ul,
 li {
     list-style-type: none;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    display: grid;
+    align-content: start;
+    gap: 5%;
+    background-color: rgb(69, 144, 206);
+    color: white;
+    font-weight: 600;
+    padding-left: 10%;
+}
+
+.logo {
+    margin-top: 10%;
+    font-size: 1.40rem;
+}
+
+.navigation,
+.settings {
+    font-size: 1.10rem;
+}
+
+.navigation ul li,
+.settings ul li {
+    margin-top: 5%;
+}
+
+.logo img,
+.navigation ul li img,
+.settings ul li img {
+    height: 24px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
