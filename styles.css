@@ -53,3 +53,104 @@ li {
     position: relative;
     top: 4px;
 }
+
+.header {
+    display: grid;
+    box-shadow: 3px 3px 6px grey;
+    padding: 20px 36px;
+}
+
+.search img {
+    height: 18px;
+    position: relative;
+    top: 5px;
+    margin-right: 14px;
+}
+
+.search input {
+    appearance: none;
+    background-color: rgb(231, 231, 231);
+    border-radius: 16px;
+    border: 0px;
+    height: 1.50rem;
+    width: 90%;
+    padding: 0px 12px;
+    font-size: 0.8rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+}
+
+.top .user {
+    display: grid;
+    grid-template-columns: repeat(3, min(110px, 30%));
+    justify-items: center;
+    align-items: center;
+}
+
+.top .user span {
+    font-weight: 500;
+}
+
+.top .user img:first-child {
+    height: 26px;
+}
+
+.top .user > img {
+    height: 40px;
+    border-radius: 24px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.bottom div:first-child {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    align-items: center;
+}
+
+.bottom div:first-child img {
+    height: 64px;
+    border-radius: 34px;
+}
+
+.greetings {
+    font-weight: 700;
+}
+
+.greetings .small {
+    font-size: 0.75rem;
+}
+
+.greetings .big {
+    font-size: 1.30rem;
+    margin-top: 4px;
+}
+
+.header-buttons {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.header-buttons button {
+    padding: 10px 26px;
+    font-size: 0.80rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(69, 144, 206);
+    border: none;
+    border-radius: 16px;
+}
+
+.header-buttons button:hover {
+    background-color: rgb(61, 129, 184);
+}
