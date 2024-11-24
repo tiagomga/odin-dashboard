@@ -45,6 +45,13 @@ li {
 .navigation ul li,
 .settings ul li {
     margin-top: 5%;
+    cursor: pointer;
+}
+
+.navigation ul li:hover,
+.settings ul li:hover {
+    color: rgb(213, 231, 245);
+    transition: 0.2s ease;
 }
 
 .logo img,
@@ -99,6 +106,7 @@ li {
 
 .top .user img:first-child {
     height: 26px;
+    cursor: pointer;
 }
 
 .top .user > img {
@@ -151,6 +159,7 @@ li {
     background-color: rgb(69, 144, 206);
     border: none;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .header-buttons button:hover {
@@ -194,12 +203,20 @@ li {
 
 .projects .card:hover {
     transform: translate(2px, 2px);
+    border-left: 8px solid rgb(69, 144, 206);
+    box-shadow: 2px 2px 4px rgb(177, 177, 177);
     transition: 0.2s ease;
 }
 
 .project-title {
     font-weight: 600;
     margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.project-title:hover {
+    color: rgb(69, 144, 206);
+    transition: 0.2s ease;
 }
 
 .project-text {
@@ -219,7 +236,8 @@ li {
 
 .options img {
     height: 20px;
-    filter:grayscale(100);
+    filter: grayscale(100);
+    cursor: pointer;
 }
 
 .announcements .card,
