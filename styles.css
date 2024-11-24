@@ -1,5 +1,6 @@
 :root {
     font-family: 'Roboto', sans-serif;
+    color: rgb(33, 33, 33);
 }
 
 * {
@@ -17,6 +18,7 @@ li {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
+    height: 100vh;
 }
 
 .sidebar {
@@ -56,8 +58,8 @@ li {
 
 .header {
     display: grid;
-    box-shadow: 3px 3px 6px grey;
     padding: 20px 36px;
+    gap: 32px;
 }
 
 .search img {
@@ -153,4 +155,140 @@ li {
 
 .header-buttons button:hover {
     background-color: rgb(61, 129, 184);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(242, 242, 242);
+    padding: 36px 80px 60px 24px;
+}
+
+.projects {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 370px));
+    grid-template-rows: 0px 1fr;
+    gap: 30px;
+}
+
+.projects .content-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.content-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.card {
+    position: relative;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px 18px;
+    border-left: 8px solid rgb(238, 174, 25);
+    box-shadow: 3px 3px 4px rgb(177, 177, 177);
+}
+
+.projects .card:hover {
+    transform: translate(2px, 2px);
+    transition: 0.2s ease;
+}
+
+.project-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.project-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgb(98, 98, 98);
+}
+
+.options {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.options img {
+    height: 20px;
+    filter:grayscale(100);
+}
+
+.announcements .card,
+.trending .card {
+    border: none;
+    height: auto;
+    padding: 10%;
+}
+
+.announcements {
+    margin-bottom: 42px;
+}
+
+.announcement-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.announcement-text {
+    font-size: 0.7rem;
+    color: rgb(115, 115, 115);
+}
+
+.announcement {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.announcement:first-child {
+    margin-top: 0px;
+}
+
+.announcement:last-child {
+    padding-bottom: 0px;
+    border: none;
+}
+
+.announcements .content-title,
+.trending .content-title {
+    margin-bottom: 10px;
+}
+
+.trending .user {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.trending .user:first-child {
+    margin-top: 0px;
+}
+
+.trending .user img {
+    grid-row: 1/ 3;
+    object-fit: cover;
+    height: 46px;
+    width: 46px;
+    border-radius: 24px;
+}
+
+.user-tag,
+.user-name {
+    font-size: 0.80rem;
+}
+
+.user-name {
+    color: rgb(115, 115, 115);
+    grid-column: 2;
+    margin-top: -10px;
 }
